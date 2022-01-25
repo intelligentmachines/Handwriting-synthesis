@@ -32,7 +32,7 @@ def plot_stroke(stroke, save_name=None):
         pyplot.show()
     else:
         try:
-            pyplot.savefig(save_name, bbox_inches="tight", pad_inches=0.5)
+            pyplot.savefig(save_name, bbox_inches="tight", pad_inches=0.5, format='png', transparent=True)
         except Exception:
             print("Error building image!: " + save_name)
 
